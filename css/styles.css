@@ -947,7 +947,8 @@ a {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
-  border: 1px solid #4d5ae5, rgba(46, 47, 66, 0.4);
+  border: 1px solid #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   transition-property: fill, border-color;
@@ -961,7 +962,7 @@ a {
 }
 
 .data-form-input:focus + .input-icon {
-  fill: #8e8f99;
+  fill: #4d5ae5;
 }
 
 .comment {
@@ -1019,9 +1020,9 @@ a {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.166;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01px;
 
-  color: #4d5ae5;
+  color: #8e8f99;
 }
 
 .inscription-textarea {
@@ -1052,7 +1053,7 @@ a {
 .checkbox-icon {
   display: inline-block;
 
-  border: 2px solid var(--navyblue-modal);
+  border: 2px solid #4d5ae5;
   border-radius: 2px;
 
   vertical-align: sub;
