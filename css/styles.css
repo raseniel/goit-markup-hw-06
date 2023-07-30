@@ -382,8 +382,8 @@ a {
 }
 
 .services-list_item {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 24px;
+  margin-left: 24px;
 }
 
 .team {
@@ -584,16 +584,11 @@ a {
 }
 
 .subscribe-footer {
-  margin-left: 50%;
+  margin-left: 80px;
 }
 
 .js-subscribe {
   display: flex;
-  position: relative;
-
-  flex-direction: column;
-  margin-left: 93px;
-  margin-top: -115px;
 }
 
 .subscribe-subtitle {
@@ -609,19 +604,20 @@ a {
 }
 
 .subscribe-button {
-  margin-left: 12px;
-  padding: 10px 28px 10px 29px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
 
-  min-width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 
   background-color: #4d5ae5;
   color: white;
-
+  cursor: pointer;
   border: 1px solid transparent;
   border-radius: 4px;
 
@@ -645,20 +641,26 @@ a {
   fill: white;
 }
 
-.subscribe-input {
-  width: 358px;
-  height: 50px;
+.subscribe-input::placeholder {
+  font-size: 12px;
+}
 
+.subscribe-input {
+  width: 264px;
+  height: 40px;
   padding: 15px 16px;
 
   border: 1px solid #4d5ae5;
   border-radius: 4px;
-
-  font-size: 16px;
-
+  font-size: 12px;
   background-color: transparent;
   border-color: white;
   color: white;
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: #4d5ae5;
 }
 
 .subscribe-input::placeholder {
@@ -860,6 +862,7 @@ a {
   align-items: center;
   width: 24px;
   height: 24px;
+  margin: 24px;
 
   background-color: #e7e9fc;
   color: var(--navyblue);
@@ -892,16 +895,21 @@ a {
 
 /* Data forms Section */
 .data-form {
-  padding: 40px;
+  margin: 24px;
+  width: 360px;
+  /* height: 58px; */
 }
 .form-subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  width: 24px 360px;
   text-align: center;
-
-  margin-bottom: 12px;
+  /* margin: 24px; */
+  margin-bottom: 16px;
+  margin-top: 72px;
 
   color: #2e2f42;
 }
@@ -922,7 +930,7 @@ a {
   background-color: #4d5ae5;
   color: white;
 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
 
   border: 1px solid transparent;
   border-radius: 4px;
@@ -948,7 +956,7 @@ a {
   padding-bottom: 11px;
   padding-left: 42px;
   border: 1px solid #4d5ae5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
 
   transition-property: fill, border-color;
