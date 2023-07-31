@@ -895,9 +895,13 @@ a {
 
 /* Data forms Section */
 .data-form {
-  margin: 24px;
-  width: 360px;
-  /* height: 58px; */
+  margin: auto;
+  padding-top: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  width: 408px;
+  height: 584px;
 }
 .form-subtitle {
   font-size: 16px;
@@ -907,7 +911,6 @@ a {
   letter-spacing: 0.32px;
   width: 24px 360px;
   text-align: center;
-  /* margin: 24px; */
   margin-bottom: 16px;
   margin-top: 72px;
 
@@ -917,20 +920,23 @@ a {
 .data-form-button {
   display: block;
 
-  min-width: 200px;
-  height: 50px;
+  min-width: 169px;
+  height: 56px;
 
-  padding: 10px 55px 10px 56px;
+  padding: 16px 32px 16px 32px;
   margin: auto;
 
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 
-  background-color: #4d5ae5;
-  color: white;
-
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fcfcfc;
+  text-align: center;
+  cursor: pointer;
 
   border: 1px solid transparent;
   border-radius: 4px;
@@ -942,30 +948,30 @@ a {
 
 .data-form-button:hover,
 .data-form-button:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   border-radius: 4px;
 }
 
 .data-form-input {
   display: block;
 
-  width: 100%;
+  width: 360px;
   height: 40px;
 
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
   border: 1px solid #4d5ae5;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
 
-  transition-property: fill, border-color;
+  transition-property: fill;
+  border-color: #2e2f42;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.data-form-input:focus,
-.data-form-input:hover {
+.data-form-input:hover,
+.data-form-input:focus {
   border-color: #4d5ae5;
 }
 
@@ -974,21 +980,24 @@ a {
 }
 
 .comment {
-  width: 100%;
+  width: 360px;
   height: 120px;
 
   padding-left: 16px;
 
-  margin-top: 4px;
+  margin-top: 8px;
 
   resize: none;
+  border-radius: 4px;
+  border: 1px solid #2e2f42;
 }
 
 .comment::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.48px;
 
   color: #2e2f42;
 }
@@ -1000,8 +1009,8 @@ a {
 
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 14px;
 
   text-align: center;
 
@@ -1010,13 +1019,17 @@ a {
 
 .agree-newsletter-text {
   display: inline;
+  margin-left: 8px;
 }
 
 .agreement-conditions {
+  font-family: Roboto;
+  font-size: 12px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
 
   text-decoration: underline;
   color: #4d5ae5;
@@ -1025,16 +1038,18 @@ a {
 .inscription {
   display: block;
 
-  margin-bottom: 10px;
   font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  margin-bottom: 8px;
 
   color: #8e8f99;
 }
 
 .inscription-textarea {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .input-wrap {
@@ -1055,13 +1070,12 @@ a {
 
 .checkbox {
   appearance: none;
-  position: absolute;
+  margin-left: -22px;
 }
 
 .checkbox-icon {
   display: inline-block;
-
-  border: 2px solid #4d5ae5;
+  border: 2px solid #2e2f42;
   border-radius: 2px;
 
   vertical-align: sub;
@@ -1070,7 +1084,7 @@ a {
 .check-mark {
   display: block;
   width: 16px;
-  height: 15px;
+  height: 16px;
 }
 
 .checkbox:checked + .checkbox-icon {
