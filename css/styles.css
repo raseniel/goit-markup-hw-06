@@ -952,7 +952,7 @@ a {
   border-radius: 4px;
 
   transition-property: fill;
-  /* border-color: #2e2f42; */
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -962,7 +962,7 @@ a {
   border-color: #4d5ae5;
 }
 
-.data-form-input:focus + .input-icon {
+.data-form-input:focus + .person-form-icon {
   fill: #4d5ae5;
 }
 
@@ -1033,6 +1033,7 @@ a {
   line-height: 14px;
   letter-spacing: 0.48px;
 }
+
 .inscription {
   position: relative;
   display: block;
@@ -1042,19 +1043,13 @@ a {
   font-weight: 400;
   line-height: 14px; /* 116.667% */
   letter-spacing: 0.48px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 
   color: #8e8f99;
 }
 
 .inscription-textarea {
   margin-bottom: 22px;
-}
-
-.input-wrap {
-  display: block;
-  position: relative;
-  margin-top: 4px;
 }
 
 .person-form-icon {
@@ -1065,6 +1060,7 @@ a {
 
   width: 16px;
   height: 16px;
+  fill: #2e2f42;
 }
 
 .checkbox {
@@ -1083,51 +1079,15 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Testing */
-/* .checkbox-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: #404bbf;
-}
-
-/* .input {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-} */
-
-/* .check-mark {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: red;  */
-
 .check-mark {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #fcfcfc;
-}
-
-/* End */
-.check-mark {
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-.check-mark-input {
   display: block;
   width: 16px;
   height: 16px;
-  padding: 16px;
-  color: red;
+  fill: #fcfcfc var(--cloud);
 }
 
-.check-mark-input:checked + .checkbox-icon {
+.checkbox:checked + .checkbox-icon {
   background-size: contain;
-  color: #fcfcfc;
 
   background-color: #404bbf;
   border-color: #404bbf;

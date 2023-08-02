@@ -438,24 +438,23 @@
           <p class="form-subtitle">Leave your contacts and we will call you back</p>
           <label class="inscription">
             <span class="input-label-text">Name</span>
-            <span class="input-wrap"></span>
-              <input
-                class="data-form-input"
+           
+                <input class="data-form-input"
                 name="person-form"
                 type="text"
                 minlength="2"
                 required/>
-                <!-- <span class="input-icon"> -->
+             
                 <svg class="person-form-icon">
                   <use href="./images/iconshw6.svg#icon-Vector-name"></use>
                 </svg>
-              <!-- </span> -->
-           
+              
+                
           </label>
 
           <label class="inscription">
-            <p>Phone</p>
-            <span class="input-wrap">
+            <span class="input-label-text">Phone</span>
+
               <input
                 class="data-form-input"
                 name="phone-form"
@@ -465,33 +464,31 @@
                 minlength="10"
                 required
               />
-              <span class="input-icon">
+             
                 <svg class="person-form-icon">
                   <use href="./images/iconshw6.svg#icon-vector-phone"></use>
                 </svg>
-              </span>
-            </span>
+              
           </label>
 
           <label class="inscription">
-            <span>Email</span>
-            <span class="input-wrap"></span>
+            <span class="input-label-text">Email</span>
+           
               <input
                 class="data-form-input"
                 name="email-form"
                 type="email"
-                required
-              />
-              <!-- <span class="input-icon"> -->
+                required/>
+           
                 <svg class="person-form-icon">
                   <use href="./images/iconshw6.svg#icon-vector-mail"></use>
                 </svg>
-              <!-- </span> -->
+         
             
           </label>
 
           <label class="inscription inscription-textarea">
-            <p>Comment</p>
+            <span class="input-label-text">Comment</span>
             <textarea
               name="comment-form"
               class="data-form-input comment"
@@ -500,7 +497,7 @@
           </label>
 
           <label for="check-box" class="agree-newsletter">
-            <input
+            <input style="color: #FCFCFC;"
               type="checkbox"
               id="check-box"
               value="agree"
@@ -510,10 +507,11 @@
             />
             <span class="checkbox-icon">
                 
-              <label class="check-mark" type="checked" checked="checked">
-                <input class="check-mark-input" type="checkbox" checked="checked">
-                <!-- <use href="./images/iconshw6.svg#icon-Vector-check"></use> -->
-              </label>
+              
+                <svg class="check-mark">
+                <use href="./images/iconshw6.svg#icon-Vector-check"></use>
+                </svg>
+            
             </span>
             <p class="agree-newsletter-text">
               I accept the terms and conditions of the <a href="#" class="agreement-conditions"> Privacy Policy</a>
