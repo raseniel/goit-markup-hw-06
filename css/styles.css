@@ -950,9 +950,7 @@ a {
   padding-left: 42px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-
-  transition-property: fill;
-
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -962,8 +960,13 @@ a {
   border-color: #4d5ae5;
 }
 
+.data-form-input:hover + .person-form-icon,
 .data-form-input:focus + .person-form-icon {
   fill: #4d5ae5;
+}
+
+.textarea.data-form-input.comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .comment {
@@ -971,8 +974,6 @@ a {
   height: 120px;
 
   padding-left: 16px;
-
-  margin-top: 8px;
 
   resize: none;
   border-radius: 4px;
@@ -986,7 +987,7 @@ a {
   line-height: 14px;
   letter-spacing: 0.48px;
 
-  color: #2e2f42;
+  color: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .agree-newsletter {
@@ -1043,7 +1044,7 @@ a {
   font-weight: 400;
   line-height: 14px; /* 116.667% */
   letter-spacing: 0.48px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   color: #8e8f99;
 }
@@ -1061,6 +1062,9 @@ a {
   width: 16px;
   height: 16px;
   fill: #2e2f42;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox {
@@ -1069,10 +1073,13 @@ a {
 }
 
 .checkbox-icon {
-  display: inline-block;
-  border: 2px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   vertical-align: sub;
   transition-property: background-color, border-color;
   transition-duration: 250ms;
@@ -1081,8 +1088,8 @@ a {
 
 .check-mark {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   fill: #fcfcfc var(--cloud);
 }
 
